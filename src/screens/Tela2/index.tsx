@@ -6,14 +6,16 @@ export function Tela2() {
 
     const bolhas = require('../../assets/bolhas.png')
 
-    return(
+    return (
         <View style={styles.container}>
-            <ImageBackground style={styles.container} source={bolhas} >
-                <Text style={styles.h4}>
-                    Descubra qual aquário se adequa melhor às espécies que deseja cuidar!
-                </Text>
-            </ImageBackground>
-            <Image source={require('../../assets/aquario.png')}/>
+            <View style={styles.bub}>
+                <ImageBackground source={bolhas} >
+                    <Text style={styles.buble}>
+                        Descubra qual aquário se adequa melhor às espécies que deseja cuidar!
+                    </Text>
+                </ImageBackground>
+            </View>
+            <Image style={styles.img} source={require('../../assets/aquario.png')} />
             <Text style={styles.h4}>
                 Ou então, descubra quais espécies podem dar vida ao aquário que já possui!
             </Text>

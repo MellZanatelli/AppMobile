@@ -16,7 +16,7 @@ export function Tela1() {
             <Text style={styles.h3}>
                 Descubra como criar e cuidar de seu próprio ecossistema aquático!
             </Text>
-            <Image source={require('../../assets/ecossistema.png')}/>
+            <Image style={styles.img} source={require('../../assets/ecossistema.png')}/>
         </View>
     )
 }

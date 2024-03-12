@@ -30,7 +30,7 @@
       [
       "expo-font",
       {
-        "fonts": ["./assets/OceanFont.ttf"]
+        "fonts": ["./assets/zilap-marine-font.ttf"]
       }
     ]
     ]
