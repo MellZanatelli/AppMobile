@@ -6,7 +6,7 @@ export function Fundo({children}:any) {
     const mar = require('../../assets/fundo-mar.png')
 
     return(
-        <View style={styles.container}>
+        <View style={styles.fundo}>
             <ImageBackground style={styles.container} source={mar}>
                 {children}
             </ImageBackground>

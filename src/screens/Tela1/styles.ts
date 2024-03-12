@@ -6,10 +6,11 @@ export const styles = StyleSheet.create({
     },
     h1: {
         color: '#ffff',
-        fontSize: 90,
+        fontSize: 100,
+        fontFamily: 'OceanFont',
     },
     h3: {
         color: '#ffff',
-        fontSize: 60,
+        fontSize: 45,
     }
 })

@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     fundo: {
-        backgroundColor: '#2E2454'  
+        flex: 1,
+        backgroundColor: '#2E2454',  
     }
 })
