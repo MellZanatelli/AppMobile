@@ -6,17 +6,16 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center', 
     },
-    h1: {
-        color: '#ffff',
-        fontSize: 100,
-        fontFamily: 'zilap-marine-font',
-        padding: 10,
-        textAlign: 'center',
+    header: {
+        padding: 40,
+    },
+    titulo: {
+        margin: 10,
     },
     h3: {
         color: '#ffff',
         fontSize: 45,
-        padding: 10,
+        padding: 20,
         textAlign: 'center',
     },
     img: {
