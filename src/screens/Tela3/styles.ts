@@ -4,24 +4,24 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center', 
+        alignItems: 'center',
     },
-    header: {
-        padding: 40,
+    bub: {
+        padding: 10,
+        alignSelf: 'stretch',
     },
-    titulo: {
-        margin: 10,
+    buble: {
+        fontSize: 30,
+        color: '#2E2454',
+        textAlign: 'center',
+        padding: 55,        
     },
-    h3: {
+    h4: {
         color: '#ffff',
-        fontSize: 45,
-        padding: 20,
+        fontSize: 30,
         textAlign: 'center',
     },
     img: {
         padding: 10,
-    },
-    pontos: {
-        
     }
 })

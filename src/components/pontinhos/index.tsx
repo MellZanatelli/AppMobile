@@ -1,13 +1,15 @@
-import { View, Buttom } from "react-native"
+import { TouchableOpacity, TouchableOpacityProps} from "react-native"
 import { styles } from "./styles"
 
-export function Pontinhos(){
+interface Pontinho extends TouchableOpacityProps {
+    onPressP: () => void
+    cor: boolean
+}
+
+export function Pontinhos({onPressP, cor}:Pontinho){
     return(
-        <View>
-            <Buttom/>
-            <Buttom/>
-            <Buttom/>
-            <Buttom/>
-        </View>
+        <>
+            <TouchableOpacity style={cor ? styles.colorido : styles.branco} onPress = {onPressP}/>
+        </>
     )
 }

@@ -23,8 +23,8 @@ export function Tela2() {
             </Text>
             <View style={styles.pontos}>
                 <Pontinhos onPressP={() => setPagina(1)} cor={false} />
-                <Pontinhos onPressP={() => setPagina(2)} cor={true} />
-                <Pontinhos onPressP={() => setPagina(3)} cor={false} />
+                <Pontinhos onPressP={() => setPagina(2)} cor={false} />
+                <Pontinhos onPressP={() => setPagina(3)} cor={true} />
                 <Pontinhos onPressP={() => setPagina(4)} cor={false} />
             </View>
         </View>

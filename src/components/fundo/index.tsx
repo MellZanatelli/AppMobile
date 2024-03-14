@@ -2,7 +2,11 @@
 import { ImageBackground, View } from "react-native"
 import { styles } from "./styles"
 
-export function Fundo({children}:any) {
+interface Fund {
+    children: React.ReactNode
+}
+
+export function Fundo({children}:Fund) {
     const mar = require('../../assets/fundo-mar.png')
 
     return(
