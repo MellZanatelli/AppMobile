@@ -6,22 +6,46 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    bub: {
-        padding: 10,
-        alignSelf: 'stretch',
-    },
-    buble: {
-        fontSize: 30,
-        color: '#2E2454',
-        textAlign: 'center',
-        padding: 55,        
-    },
-    h4: {
+    h2: {
         color: '#ffff',
-        fontSize: 30,
+        fontSize: 60,
         textAlign: 'center',
+        padding: 20,
+    },
+    pontos: {
+        padding: 40,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'flex-end',
+    },
+    fim: {
+        padding: 20,
+    },
+    bot: {
+        padding: 20,
+        backgroundColor: '#ffffff',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 20,
+    },
+    com: {
+        color: '#2E2454',
+        fontSize: 30,
     },
     img: {
         padding: 10,
+    },
+    txt: {
+        padding: 20,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    sub: {
+        fontSize: 25,
     }
 })

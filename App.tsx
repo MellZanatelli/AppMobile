@@ -1,21 +1,33 @@
 
 import { Tela1 } from './src/screens/Tela1'
 import { Tela2 } from './src/screens/Tela2'
-import {Pontinhos} from './src/components/pontinhos'
 import { Tela3 } from './src/screens/Tela3'
 import { Tela4 } from './src/screens/Tela4'
-import { Fundo } from './src/components/fundo'
-import { Pontinhos } from './src/components/pontinhos'
-import { FunctionComponent, useState } from 'react'
-import { FlatList } from 'react-native/types'
+import { Dispatch, SetStateAction, useState } from 'react'
+
+export interface Page {
+  setPagina: Dispatch<SetStateAction<number>>
+}
+
 
 export default function App() {
-  const [pagina, setPagina] = useState(1)
 
-  return(
-    switch (pagina){
-      case 1:
 
-    }
-  )
+  const [pagina, setPage] = useState(1)
+
+  switch (pagina) {
+    case 1:
+      return <Tela1 setPagina={setPage} />
+      break
+    case 2:
+      return <Tela2 setPagina={setPage} />
+      break
+    case 3:
+      return <Tela3 setPagina={setPage} />
+      break
+    case 4:
+      return <Tela4 setPagina={setPage} />
+      break
+  }
+
 }

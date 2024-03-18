@@ -1,10 +1,11 @@
-import { React } from 'react'
+
 import { View, Text, Image, ImageBackground } from "react-native"
 import { Pontinhos } from '../../components/pontinhos'
 import { Fundo } from '../../components/fundo'
 import { styles } from "./styles"
+import { Page } from '../../../App'
 
-export function Tela1() {
+export function Tela1({ setPagina }: Page) {
 
     return (
         <Fundo>
@@ -19,12 +20,12 @@ export function Tela1() {
                     Descubra como criar e cuidar de seu próprio ecossistema aquático!
                 </Text>
                 <Image style={styles.img} source={require('../../assets/ecossistema.png')} />
-                <View style={styles.pontos}>
-                    <Pontinhos onPressP={() => setPagina(1)} cor={true} />
-                    <Pontinhos onPressP={() => setPagina(2)} cor={false} />
-                    <Pontinhos onPressP={() => setPagina(3)} cor={false} />
-                    <Pontinhos onPressP={() => setPagina(4)} cor={false} />
-                </View>
+            </View>
+            <View style={styles.pontos}>
+                <Pontinhos onPressP={() => setPagina(1)} cor={true} />
+                <Pontinhos onPressP={() => setPagina(2)} cor={false} />
+                <Pontinhos onPressP={() => setPagina(3)} cor={false} />
+                <Pontinhos onPressP={() => setPagina(4)} cor={false} />
             </View>
         </Fundo>
     )

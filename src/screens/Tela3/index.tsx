@@ -3,30 +3,33 @@ import { View, Text, Image, ImageBackground } from "react-native"
 import { styles } from "./styles"
 import { Pontinhos } from '../../components/pontinhos'
 import { Fundo } from '../../components/fundo'
+import { Page } from '../../../App'
 
-export function Tela2() {
+export function Tela3({ setPagina }: Page) {
 
     const bolhas = require('../../assets/bolhas.png')
 
     return (
-        <View style={styles.container}>
-            <View style={styles.bub}>
-                <ImageBackground source={bolhas} >
-                    <Text style={styles.buble}>
-                        Descubra qual aquário se adequa melhor às espécies que deseja cuidar!
-                    </Text>
-                </ImageBackground>
+        <Fundo>
+            <View style={styles.container}>
+                <Text style={styles.h4}>
+                    Caso queira criar um aquário totalmente independente, temos as dicas certas!
+                </Text>
+                <Image style={styles.img} source={require('../../assets/lagosta.png')} />
+                <View style={styles.bub}>
+                    <ImageBackground source={bolhas} >
+                        <Text style={styles.buble}>
+                            Há várias espécies de plantas e animais que limpam o aquário e alimentam seus pets por você!
+                        </Text>
+                    </ImageBackground>
+                </View>
             </View>
-            <Image style={styles.img} source={require('../../assets/aquario.png')} />
-            <Text style={styles.h4}>
-                Ou então, descubra quais espécies podem dar vida ao aquário que já possui!
-            </Text>
             <View style={styles.pontos}>
                 <Pontinhos onPressP={() => setPagina(1)} cor={false} />
                 <Pontinhos onPressP={() => setPagina(2)} cor={false} />
                 <Pontinhos onPressP={() => setPagina(3)} cor={true} />
                 <Pontinhos onPressP={() => setPagina(4)} cor={false} />
             </View>
-        </View>
+        </Fundo>
     )
 }

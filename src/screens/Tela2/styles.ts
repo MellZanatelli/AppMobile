@@ -23,5 +23,12 @@ export const styles = StyleSheet.create({
     },
     img: {
         padding: 10,
+    },
+    pontos: {
+        padding: 40,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'flex-end',
     }
 })
