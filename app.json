@@ -21,18 +21,18 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mellzanatelli.mell"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      [
-      "expo-font",
-      {
-        "fonts": ["./assets/zilap-marine-font.ttf"]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0cf8a6ca-58ee-4fa2-9940-e83b9812fff4"
       }
-    ]
-    ]
+    }
   }
 }

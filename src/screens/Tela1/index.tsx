@@ -1,15 +1,17 @@
 
-import { View, Text, Image, ImageBackground } from "react-native"
+import { View, Text, Image} from "react-native"
 import { Pontinhos } from '../../components/pontinhos'
 import { Fundo } from '../../components/fundo'
 import { styles } from "./styles"
 import { Page } from '../../../App'
+import {Scontainer} from '../../styles/globalstyle'
+import {Pontos} from '../../styles/globalstyle'
 
 export function Tela1({ setPagina }: Page) {
 
     return (
         <Fundo>
-            <View style={styles.container}>
+            <View style={Scontainer.container}>
                 <View style={styles.header}>
                     <Text style={styles.h3}>
                         Bem-vindo ao
@@ -21,7 +23,7 @@ export function Tela1({ setPagina }: Page) {
                 </Text>
                 <Image style={styles.img} source={require('../../assets/ecossistema.png')} />
             </View>
-            <View style={styles.pontos}>
+            <View style={Pontos.pontos}>
                 <Pontinhos onPressP={() => setPagina(1)} cor={true} />
                 <Pontinhos onPressP={() => setPagina(2)} cor={false} />
                 <Pontinhos onPressP={() => setPagina(3)} cor={false} />

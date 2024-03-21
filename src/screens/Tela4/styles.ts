@@ -1,42 +1,33 @@
 import {StyleSheet} from 'react-native'
+import {colors} from '../../styles/globalstyle'
 
 export const styles = StyleSheet.create({   
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
     h2: {
-        color: '#ffff',
+        color: colors.white,
         fontSize: 60,
         textAlign: 'center',
         padding: 20,
-    },
-    pontos: {
-        padding: 40,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'flex-end',
     },
     fim: {
         padding: 20,
     },
     bot: {
         padding: 20,
-        backgroundColor: '#ffffff',
+        backgroundColor: colors.white,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         borderRadius: 20,
     },
     com: {
-        color: '#2E2454',
+        color: colors.roxo,
         fontSize: 30,
     },
     img: {
         padding: 10,
+        height: 30,
+        width: 40,
     },
     txt: {
         padding: 20,
@@ -47,5 +38,11 @@ export const styles = StyleSheet.create({
     },
     sub: {
         fontSize: 25,
+        color: colors.white,
+        textDecorationLine: 'underline',
+    },
+    log: {
+        fontSize: 20,
+        color: colors.white,
     }
 })

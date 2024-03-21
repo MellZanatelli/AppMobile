@@ -1,6 +1,7 @@
 
 import { ImageBackground, View } from "react-native"
 import { styles } from "./styles"
+import {Scontainer} from '../../styles/globalstyle'
 
 interface Fund {
     children: React.ReactNode
@@ -11,7 +12,7 @@ export function Fundo({children}:Fund) {
 
     return(
         <View style={styles.fundo}>
-            <ImageBackground style={styles.container} source={mar}>
+            <ImageBackground style={Scontainer.container} source={mar}>
                 {children}
             </ImageBackground>
         </View>

@@ -4,6 +4,8 @@ import { styles } from "./styles"
 import { Pontinhos } from '../../components/pontinhos'
 import { Fundo } from '../../components/fundo'
 import { Page } from '../../../App'
+import {Scontainer} from '../../styles/globalstyle'
+import {Pontos} from '../../styles/globalstyle'
 
 export function Tela2({ setPagina }: Page) {
 
@@ -11,9 +13,9 @@ export function Tela2({ setPagina }: Page) {
 
     return (
         <Fundo>
-            <View style={styles.container}>
+            <View style={Scontainer.container}>
                 <View style={styles.bub}>
-                    <ImageBackground source={bolhas} >
+                    <ImageBackground source={bolhas} resizeMode='cover'>
                         <Text style={styles.buble}>
                             Descubra qual aquário se adequa melhor às espécies que deseja cuidar!
                         </Text>
@@ -24,7 +26,7 @@ export function Tela2({ setPagina }: Page) {
                     Ou então, descubra quais espécies podem dar vida ao aquário que já possui!
                 </Text>
             </View>
-            <View style={styles.pontos}>
+            <View style={Pontos.pontos}>
                 <Pontinhos onPressP={() => setPagina(1)} cor={false} />
                 <Pontinhos onPressP={() => setPagina(2)} cor={true} />
                 <Pontinhos onPressP={() => setPagina(3)} cor={false} />

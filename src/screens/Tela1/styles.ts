@@ -1,19 +1,16 @@
 import {StyleSheet} from 'react-native'
+import {colors} from '../../styles/globalstyle'
 
 export const styles = StyleSheet.create({   
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center', 
-    },
     header: {
         padding: 40,
     },
     titulo: {
-        margin: 10,
+        height: 45,
+        width: 'auto',
     },
     h3: {
-        color: '#ffff',
+        color: colors.white,
         fontSize: 45,
         padding: 20,
         textAlign: 'center',
@@ -21,11 +18,4 @@ export const styles = StyleSheet.create({
     img: {
         padding: 10,
     },
-    pontos: {
-        padding: 40,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'flex-end',
-    }
 })

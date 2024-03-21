@@ -1,12 +1,13 @@
 import {StyleSheet} from 'react-native'
+import {colors} from '../../styles/globalstyle'
 
 export const styles = StyleSheet.create({ 
     colorido: {
         width: 30,
         height: 30,
         borderWidth: 5,
-        borderColor: '#FFFFFF',
-        backgroundColor: '#2E2454',
+        borderColor: colors.white,
+        backgroundColor: colors.roxo,
         borderRadius: 100,
         margin: 10,
     },
@@ -14,8 +15,8 @@ export const styles = StyleSheet.create({
         width: 30,
         height: 30,
         borderWidth: 5,
-        borderColor: '#FFFFFF',
-        backgroundColor: '#FFFFFF',
+        borderColor: colors.white,
+        backgroundColor: colors.white,
         borderRadius: 100,
         margin: 10,
     }
